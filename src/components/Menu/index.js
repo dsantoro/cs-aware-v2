@@ -57,39 +57,28 @@ const Button = styled(NavLink).attrs({ activeClassName })`
 
 const MENU = [
   {
-    id: 1,
-    title: "Home",
-    icon: faHome,
-    url: "/",
-    exact: true,
-  },
-  {
     id: 2,
     title: "Assist",
     icon: faBook,
     url: "/assist",
-    exact: false,
   },
   {
     id: 3,
     title: "Protect",
     icon: faLock,
     url: "/protect",
-    exact: false,
   },
   {
     id: 4,
     title: "improve",
     icon: faChartBar,
     url: "/improve",
-    exact: false,
   },
   {
     id: 5,
     title: "More",
     icon: faEllipsisH,
     url: "/more",
-    exact: false,
   },
 ];
 
@@ -97,6 +86,12 @@ const Menu = () => {
   return (
     <Container>
       <List>
+        <li key="1">
+          <Button to="/" exact>
+            <FontAwesomeIcon icon={faHome} />
+            <span>Home</span>
+          </Button>
+        </li>
         {MENU.map((item) => (
           <li key={item.id}>
             <Button to={item.url}>

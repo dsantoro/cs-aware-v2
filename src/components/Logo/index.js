@@ -11,8 +11,15 @@ const Container = styled.div`
   box-shadow: 0 -1px 8px rgba(255, 255, 255, 0.5),
     3px 3px 12px rgba(0, 0, 0, 0.6);
   border: 1px solid rgba(0, 0, 0, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  img {
+    max-width: 80%;
+  }
 `;
 
-const Logo = () => <Container />;
+const Logo = ({ children }) => <Container>{children}</Container>;
 
 export default Logo;

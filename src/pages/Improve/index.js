@@ -6,7 +6,7 @@ import { Title } from "../../components/AppTitle";
 const Improve = () => {
   return (
     <Page id="improve">
-      <Title>Improve</Title>
+      <Title>Nothing to see here :( yet!</Title>
       <p>Coming soon...</p>
     </Page>
   );

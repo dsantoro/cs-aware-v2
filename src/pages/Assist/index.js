@@ -16,13 +16,13 @@ const PLACES = [
   {
     id: 1,
     title: "At Home",
-    link: "/assist/at-home",
+    link: "/assist/1",
     icon: faHome,
   },
   {
     id: 2,
     title: "At Office",
-    link: "/assist/at-office",
+    link: "/assist/2",
     icon: faBuilding,
   },
 ];

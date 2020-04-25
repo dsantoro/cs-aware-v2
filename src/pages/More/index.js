@@ -6,7 +6,7 @@ import { Title } from "../../components/AppTitle";
 const More = () => {
   return (
     <Page id="more">
-      <Title>More</Title>
+      <Title>Nothing to see here :( yet!</Title>
       <p>Coming soon...</p>
     </Page>
   );

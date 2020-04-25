@@ -24,8 +24,10 @@ const Title = styled.h1`
 const Header = () => {
   return (
     <Container>
-      <Logo />
-      <Title>Title</Title>
+      <Logo>
+        <img src={require("../../assets/logo-icon.svg")} alt="CS Aware" />
+      </Logo>
+      <Title>CS Aware</Title>
     </Container>
   );
 };

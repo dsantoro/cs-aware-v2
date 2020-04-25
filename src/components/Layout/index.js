@@ -5,6 +5,7 @@ const Container = styled.main`
   height: calc(100vh - 70px);
   flex-direction: column;
   overflow-y: scroll;
+  overflow-x: hidden;
   display: flex;
   background-color: #efeeee;
 `;

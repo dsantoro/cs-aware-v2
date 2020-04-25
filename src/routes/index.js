@@ -7,7 +7,9 @@ import Layout from "../components/Layout";
 
 import Home from "../pages/Home";
 import Assist from "../pages/Assist";
+import AssistDescription from "../pages/AssistDescription";
 import Protect from "../pages/Protect";
+import ProtectDescription from "../pages/ProtectDescription";
 import Improve from "../pages/Improve";
 import More from "../pages/More";
 
@@ -23,13 +25,16 @@ export default function Routes() {
           <Route path="/improve">
             <Improve />
           </Route>
+          <Route path="/protect/:id">
+            <ProtectDescription />
+          </Route>
           <Route path="/protect">
             <Protect />
           </Route>
-          <Route path="/assist">
-            <Assist />
-          </Route>
           <Route path="/assist/:id">
+            <AssistDescription />
+          </Route>
+          <Route path="/assist">
             <Assist />
           </Route>
           <Route path="/" exact>
